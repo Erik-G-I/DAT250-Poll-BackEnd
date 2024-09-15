@@ -1,0 +1,18 @@
+meta {
+  name: addVote
+  type: http
+  seq: 5
+}
+
+put {
+  url: http://localhost:8080/polls/1
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "username": "tester2",
+    "option": 0
+  }
+}

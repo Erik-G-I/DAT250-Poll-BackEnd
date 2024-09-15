@@ -1,0 +1,31 @@
+meta {
+  name: postPoll
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8080/polls/tester1
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "pollId": 1,
+    "creator": "tester1",
+    "question": "Cat or Dog?",
+    "options": [
+       {
+        "caption" : "Cat",
+        "presentationOrder": 0,
+        "voteCount": 0
+      },
+       {
+        "caption" : "Dog",
+        "presentationOrder": 1,
+        "voteCount": 0
+      }
+    ]
+  }
+}

@@ -27,6 +27,6 @@ After this the tests Pass
 ### Dockerfile
 When running building the docker image it is important to expose the port to the system so you can run HTTP requests to it.
 
-For this i used `docker run -d -p 8080:8080 expass7
+For this i used `docker run -d -p 8080:8080 expass7`
 
 It took some time to get familiar with docker, but i think i got a baisc understanding of it in the end.
